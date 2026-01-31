@@ -1,0 +1,75 @@
+.register-page {
+  background: url("/images/Registerbg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.register-container {
+  width: 450px;
+  padding: 35px;
+  text-align: center;
+  
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.register-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.role-selector button,
+.register-btn {
+  background: #ffdd57;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 90%;
+  font-weight: bold;
+}
+
+.role-selector button:hover,
+.register-btn:hover {
+  background: #f4c600;
+}
+
+.form-section input,
+.usage-select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.back-btn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.login-text {
+  margin-top: 15px;
+}
+
+.login-text span {
+  color: rgb(66, 127, 255);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}

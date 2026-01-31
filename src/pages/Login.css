@@ -1,0 +1,123 @@
+.login-page {
+  background: url("/images/Loginbg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Login box */
+.login-container {
+  width: 420px;
+  padding: 35px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.login-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Role buttons */
+.role-selector {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.role-selector button {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ffdd57;
+  font-weight: bold;
+}
+
+.role-selector button:hover {
+  background: #f4c600;
+}
+
+/* Input fields */
+.login-container input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Password with eye */
+.password-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 14px;
+  padding-right: 42px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Login button */
+.login-btn {
+  width: 90%;
+  padding: 14px;
+  background: #ffdd57;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #f4c600;
+}
+
+/* Back button */
+.back-btn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Register link */
+.register-text {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.register-text span {
+  color: rgb(66, 127, 255);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}

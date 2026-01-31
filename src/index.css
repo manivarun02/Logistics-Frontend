@@ -1,0 +1,116 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #b3b3b3;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav button {
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ===== TITLE ===== */
+.title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.title h2 {
+  font-size: 32px;
+  color: #ffd54f;
+  margin-top: 10px;
+}
+
+/* ===== SCENE DISPLAY AREA ===== */
+.scene {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+}
+
+/* ===== WAREHOUSE IMAGE ===== */
+.warehouse {
+  width: 300px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+/* ===== TRUCK (MOVING ELEMENT) ===== */
+.truck {
+  position: absolute;
+  bottom: 75px;
+  left: -300px;   /* Starting off-screen */
+  display: flex;
+  align-items: center;
+}
+
+.truck-img {
+  width: 260px;
+  z-index: 10;
+}
+
+/* ===== TRUCK LOADING AREA (WHERE BOXES GO) ===== */
+.cargo-container {
+  position: absolute;
+  bottom: 68px;
+  left: 10px;    /* Move left edge closer to truck's back edge if needed */
+  width: 172px;  /* Wider for more box separation */
+  height: 50px;
+  display: flex;
+  justify-content: space-between; /* Distributes boxes with space between */
+  align-items: flex-end;
+}
+
+/* ===== BOXES PLACED ON TRUCK ===== */
+.cargo-box {
+  width: 50px;          /* Slightly larger boxes for visibility */
+  height: auto;
+  pointer-events: none;
+}
+
+
+
+/* ===== ROAD LINE ===== */
+.road {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  height: 5px;
+  background: white;
+}
