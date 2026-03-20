@@ -98,3 +98,4 @@ Frontend can be deployed using Netlify, Vercel, or AWS S3.
 
 Mani Varun  
 Frontend Developer | Java Full Stack Aspirant
+## UPDATED TO WORK WITH RENDER
